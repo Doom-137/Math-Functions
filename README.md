@@ -1,2 +1,2 @@
 # Math-Functions
-Various mathematics functions, added as convenient.
+Various mathematics functions, updated as convenient.
