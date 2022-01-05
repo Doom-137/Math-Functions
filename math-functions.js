@@ -15,3 +15,19 @@ function factorial(n, recursion = false) {
       }
   }
 }
+
+// Return an array with the largest numbers from each provided sub-array
+function largestNumInArray(a) {
+ let manipArray = new Array();
+ let n;
+ for (let i = 0; i < a.length; i++) {
+   n = Number.NEGATIVE_INFINITY;
+   for (let j = 0; j < a[i].length; j++) {
+     if (manipArray[i][j] > n) {
+       n = a[i][j];
+     }
+   }
+   manipArray.push(n);
+ }
+  return manipArray;
+}
